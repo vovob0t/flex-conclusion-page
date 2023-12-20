@@ -5,6 +5,8 @@
 
 .body {
     min-width: 630px;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero {
@@ -72,20 +74,23 @@
     height: auto;
 }
 
-.content>.container>button {
+.content>.container>a>button {
     padding: 10px 20px;
     background: #3882F6;
     color: white;
     font-size: 20px;
+    border-radius: 8px;
 }
 
 .info-container {
-    height: 450px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 80px;
-    gap: 40px;
+    padding-top: 60px;
+    gap: 80px;
+    margin-bottom: 20px;
+
 }
 
 .info-container>.info-text {
@@ -93,13 +98,14 @@
     font-weight: 700;
     text-align: center;
 
+    min-width: 780px;
 }
 
 .info-img-grid {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 20px;
+    justify-content: center;
+    gap: 90px;
     margin: 0 20px;
 }
 
@@ -112,7 +118,7 @@
     justify-content: flex-start;
 }
 
-.card>img {
+.card>a>img {
     width: 150px;
     height: 150px;
     border: 4px solid #3882F6;
@@ -120,6 +126,32 @@
     border-radius: 10px;
     margin-bottom: 20px;
 }
-.card > div {
+
+.card>div {
     color: #48494b;
+}
+
+.quote-container {
+    background: #eee;
+
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.quote-container>.quote {
+    font-size: 35px;
+
+    width: 800px;
+}
+
+.quote-container>.author {
+    font-size: 28px;
+    font-weight: 900;
+    align-self: flex-end;
+    padding-right: 100px;
 }
