@@ -155,3 +155,42 @@
     align-self: flex-end;
     padding-right: 100px;
 }
+
+.subscribe-container {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-banner {
+    background: #3882F6;
+    width: 700px;
+    height: 130px;
+    border-radius: 13px;
+
+    color: white;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.subscribe-text-container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+.subscribe-head {
+    font-size: 20px;
+    font-weight: 900;
+}
+.subscribe-banner > button {
+    padding: 8px 25px;
+    background: #3882F6;
+    border: 2px solid white;
+    border-radius: 7px;
+
+    color: white;
+    font-weight: 900;
+    font-size: 14px;
+}
